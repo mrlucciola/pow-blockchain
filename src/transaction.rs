@@ -1,8 +1,8 @@
-use std::{collections::HashSet, io::Bytes, vec};
+use std::{collections::HashSet, vec};
 
 use crate::{Address, Hash, Hashable, u64_bytes};
 
-
+#[derive(Clone)]
 pub struct Output {
   pub to_addr: Address,
   pub value: u64,
